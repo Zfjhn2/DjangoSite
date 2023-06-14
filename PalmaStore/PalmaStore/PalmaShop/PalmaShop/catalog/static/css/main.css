@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    position: relative;
+    color: rgba(0, 255, 128, 0.288);
+    text-decoration: underline;
+    overflow: hidden;
+  }
+
+a::before {
+    position: absolute;
+    content: attr(data-content);
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+  }
+
+a::before {
+    width: 0;
+    white-space: nowrap;
+  }
+
+a:hover::before {
+    width: 100%;
+  }
+
+body{
+    background-color: rgba(128, 128, 128, 0.253);
+}
+
+.head{
+    padding-top: 80px;
+}
+
+.menu{
+    display: flex;
+    position: fixed;   top: 0;   left: 0;   z-index: 9999; margin-top: 1%; background-color: #27272736; height: 5%; width: 100%; padding-left: 550px; padding-top: 5px;
+}
+
+.menuClick{
+    padding-left: 3%;
+    list-style-type: none;
+    transform: translate(-12em);
+
+    font-size: 25px;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo{
+    font-size: 45px;
+    
+    line-height: 30px;
+    transform: translate(-11em);
+}
+
+.header-description{
+    font-weight: 300;
+    font-size: 32px;
+
+    line-height: 45px;
+
+    margin-bottom: 61px;
+    padding-bottom: -5%;
+    padding-left: 5%;
+}
+
+
+.text{
+    font-weight: 300;
+    font-size: 32px;
+
+    line-height: 45px;
+
+    margin-bottom: 61px;
+    padding-bottom: -5%;
+    padding-left: 5%;
+}
+
+.SEARCH{
+    margin-left: 5%;
+}
+.input{
+    width:650px;
+    height: 50px;
+    text-align: center;
+    color: rgb(78, 76, 76);
+}
+
+.button{
+    width:150px;
+    height: 50px;
+    color: rgb(78, 76, 76);
+}
+
+.menu2{
+    display: flex; margin-top: 1%; background-color: #27272736; height: 45px; width: 100%; padding-left: 55%;
+}
+
+.filtermenu{
+    padding-left: 3%;
+    list-style-type: none;
+    transform: translate(-12em);
+
+    font-size: 25px;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text1{
+    font-weight: 300;
+    font-size: 65px;
+
+    line-height: 45px;
+
+    margin-bottom: 61px;
+    padding-bottom: -5%;
+    padding-left: 5%;
+}
+
+.product{
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+    padding-left: 5%;
+}
+
+.Manufacturer{
+    margin-left: 5%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.ManufacturerText{
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.title{
+    margin-left: 5%;
+}
+
+.Summary{
+    margin-left: 7%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.Type{
+    margin-left: 5%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+img{
+    padding-left: 5%;
+}
+
+.textDetail{
+    margin-left: 5%;
+    font-size: 20px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.ManufacturerList{
+    margin-left: 5%;
+    font-size: 45px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.ManufacturerText2{
+    margin-left: 5%;
+    font-size: 30px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.cabinetTitle{
+    margin-left: 5%;
+    font-size: 45px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.cabinetText{
+    margin-left: 5%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.cabinetTextA{
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.cabinetCart{
+    margin-left: 5%;
+    font-size: 45px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.cabinetProduct{
+    margin-left: 5%;
+    font-size: 45px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.contact{
+    margin-left: 5%;
+    font-size: 45px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.contactText{
+    margin-left: 5%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}
+
+.login{
+    margin-left: 5%;
+    font-size: 25px;
+
+    text-decoration: none;
+    color: rgb(78, 76, 76);
+}

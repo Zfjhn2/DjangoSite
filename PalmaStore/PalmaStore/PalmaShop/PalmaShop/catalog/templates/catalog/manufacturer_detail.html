@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="pls">
+  <h1 class="ManufacturerList">Title: {{ product.title }}</h1>
+
+  <p class="ManufacturerText2"><strong>Manufacturer:</strong> <a href="" class="ManufacturerText">{{ manufacturer.name }}</a></p> 
+  <p class="ManufacturerText2"><strong>Country:</strong> {{ manufacturer.country }}</p>
+
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="pls">
+
+    <p class="header-description">Добро пожаловать в <em>PalmaShop</em>, где вы можете купить одежду на любой вкус</p>
+
+    <div>
+      <p class="text">История записей в магазине:</p>
+      <ul class="text">
+        <li><strong>Product:</strong> {{ num_product }}</li>
+        <li><strong>Products:</strong> {{ num_instances }}</li>
+        <li><strong>Available products:</strong> {{ num_instances_available }}</li>
+        <li><strong>Manufacturer:</strong> {{ num_manufacturer }}</li>
+      </ul>
+    </div>
+    
+</div>
+
+{% endblock %}

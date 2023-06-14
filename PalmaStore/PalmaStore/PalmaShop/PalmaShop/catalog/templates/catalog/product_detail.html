@@ -1,0 +1,23 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="pls">
+  <h1 class="title">Title: {{ product.title }}</h1>
+
+  <p class="Manufacturer"><strong>Manufacturer:</strong> <a href="" class="ManufacturerText">{{ product.manufacturer }}</a></p> 
+  <p class="Summary"><strong>Summary:</strong> {{ product.summary }}</p>
+  <p class="Type"><strong>Type:</strong> {{ product.type }}</p>
+
+
+  <img src="{{ product.image.url }}" alt="connect" style="max-height:300px">
+
+  <p class="textDetail"><strong>Price:</strong> {{ product.price }}</p>
+
+  <p class="textDetail">Продано: {{ product.order_count }}</p>
+  <p class="textDetail">Просмотрено: {{ product.view_count }}</p>
+
+  {% if user.is_authenticated %}
+    <a href="{% url 'add_to_cart' product.id %}" class="textDetail">Добавить в корзину</a>
+  {% endif %}
+</div>
+{% endblock %}

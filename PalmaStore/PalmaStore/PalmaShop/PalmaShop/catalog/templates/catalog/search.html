@@ -1,0 +1,35 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="pls">
+
+    <form action="{% url 'search' %}" method="get" style="margin-top: 15px" class="SEARCH">
+        <input type="text" name="search_input" placeholder="search" class="input">
+        <button type="submit" class="button">Search</button>
+    </form>
+    <div style="margin-top: 15px" class="menu2">
+        <a href="/products/filterfootwear/" style="padding: 10px" class="filtermenu" data-content="Обувь">Обувь</a>
+        <a href="/products/filterpants/" style="padding: 10px" class="filtermenu" data-content="Штаны">Штаны</a>
+        <a href="/products/filterouterwear/" style="padding: 10px" class="filtermenu" data-content="Верхняя одежда">Верхняя одежда</a>
+    </div>
+
+    <h1 class="text1">Product List</h1>
+
+    {% if search_input %}
+    <div style="display: flex">
+        {% for i in products %}
+            <div class="alert alert-primary product_block" >
+                <div class="img_div">
+                    <img src="{{ i.image.url }}" alt="connect" style="height:200px; width: 400px; margin-right: 5px">
+                </div>
+                <div class="near_img_text">
+                    <a href="{{ i.get_absolute_url }}" class="product">{{ i.title }}</a> ({{i.manufacturer}})
+                </div>
+            </div>
+            {% empty %}
+            <p>Product not found</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
